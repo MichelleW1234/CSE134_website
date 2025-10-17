@@ -3,7 +3,7 @@
 <head>
     <meta charset = "UTF-8">
     <title> Michelle's Portfolio </title>
-    <link>
+    <link rel="stylesheet" href="style-sheet.css">
     <style>
 
         body {
@@ -66,8 +66,8 @@
             <a href = "https://docs.google.com/document/d/1yxwJvILbZGjwvqFF6PGSkCUXcnz6qH2YGJsIg52HeIo/preview" target="_blank">View my resume</a> 
 
             <br>
-            <label for = "pageRead" > Percentage of page read:</label>
-            <progress id = "pageRead" value="33" max="100"></progress>
+            <label for = "pageReadOne" > Percentage of page read:</label>
+            <progress id = "pageReadOne" value="33" max="100"></progress>
             <hr>
 
             <h3> My skills: </h3>
@@ -84,13 +84,16 @@
         <section id="Projects">
             <h2> Projects: </h2>
             <button> &lt; </button> <button> &gt; </button>
+            <dialog open>
+                <p>Wow, look at all of these projects!!!</p>
+            </dialog>
             <article>
                 <project-card name = "arcade">
                     <h3> Arcade: </h3>
                     <div>
                         <picture>
-                            <source srcset="./assets/Arcade.svg">
-                            <img src = "./assets/Arcade.svg" alt="Arcade" width="150">
+                            <source srcset="./assets/arcade.svg">
+                            <img src = "./assets/arcade.svg" alt="Arcade" width="150">
                         </picture>
                         <p> 
                             <span style="color:rgb(105, 0, 196)">project type :</span> Personal <br>
@@ -107,18 +110,18 @@
                     <b> Actions: </b>
                     <nav>
                         <a href = "https://github.com/MichelleW1234/Arcade"> Visit Github Repo </a>
-                        <a href = "./ProjectOneMedia.html"> Go to media section </a>
+                        <a href = "./project-one-media.html"> Go to media section </a>
                     </nav>
                 </project-card>
             </article>
 
             <article>
-                <project-card name = "tritonTurnUp">
+                <project-card name = "tritonturnup">
                     <h3> TritonTurnUp: </h3>
                     <div>
                         <picture>
-                            <source srcset="./assets/TritonTurnUp.svg">
-                            <img src = "./assets/TritonTurnUp.svg" alt="TritonTurnUp" width="150">
+                            <source srcset="./assets/tritonturnup.svg">
+                            <img src = "./assets/tritonturnup.svg" alt="TritonTurnUp" width="150">
                         </picture>
                         <p> 
                             <span style="color:rgb(105, 0, 196)"> project type :</span> Academic <br>
@@ -135,7 +138,7 @@
                     <b> Actions: </b>
                     <nav>
                         <a href = "https://github.com/MichelleW1234/CSE-110-Project"> Visit Github Repo </a>
-                        <a href = "./ProjectTwoMedia.html"> Go to media section </a>
+                        <a href = "./project-two-media.html"> Go to media section </a>
                     </nav>
                 </project-card>
             </article>
@@ -145,8 +148,8 @@
                     <h3> Snow Agent Advertisement: </h3>
                     <div>
                         <picture>
-                            <source srcset="./assets/SnowAgent.svg">
-                            <img src = "./assets/Arcade.svg" alt="Arcade" width="150">
+                            <source srcset="./assets/snowagent.svg">
+                            <img src = "./assets/snowagent.svg" alt="SnowAgent" width="150">
                         </picture>
                         <p> 
                             <span style="color:rgb(105, 0, 196)">project type :</span> Internship <br>
@@ -162,7 +165,7 @@
                     </ul>
                     <b> Actions: </b>
                     <nav>
-                        <a href = "./ProjectThreeMedia.html"> Go to media section </a>
+                        <a href = "./project-three-media.html"> Go to media section </a>
                     </nav>
                 </project-card>
             </article>
@@ -189,26 +192,26 @@
                     <b> Actions: </b>
                     <nav>
                         <a href = "https://github.com/MichelleW1234/Word-Processor" target="_blank"> Visit Github Repo </a>
-                        <a href = "./ProjectFourMedia.html"> Go to media section </a>
+                        <a href = "./project-four-media.html"> Go to media section </a>
                     </nav>
                 </project-card>
-            </section>
-        <article>
+            </article>
+        </section>
 
         <br>
-        <label for = "pageRead" > Percentage of page read:</label>
-        <progress id = "pageRead" value="66" max="100"></progress>
+        <label for = "pageReadTwo" > Percentage of page read:</label>
+        <progress id = "pageReadTwo" value="66" max="100"></progress>
         <hr>
         
         <section id="Contacts">
             <h2> Let's keep in touch! </h2>
             <nav>
                 <a href = "https://github.com/MichelleW1234" target="_blank"> 
-                    <img src = "./assets/GitHub.svg" alt="GithubLogo" width="150">
+                    <img src = "./assets/github.svg" alt="GithubLogo" width="150">
                 </a>
                 <iframe src = "https://github.com/MichelleW1234/" width = "200" height = "400"></iframe>
                 <a  href = "https://www.linkedin.com/in/michelle-wee123/" target="_blank"> 
-                    <img src = "./assets/Linkedin.svg" alt="LinkedinLogo" width="150">
+                    <img src = "./assets/linkedin.svg" alt="LinkedinLogo" width="150">
                 </a>
                 <iframe src = "https://www.linkedin.com/in/michelle-wee123/" width = "200" height = "400"></iframe>
             </nav>
@@ -230,13 +233,11 @@
         </section>
 
         <br>
-        <label for = "pageRead" > Percentage of page read:</label>
-        <progress id = "pageRead" value="100" max="100"></progress>
+        <label for = "pageReadThree" > Percentage of page read:</label>
+        <progress id = "pageReadThree" value="100" max="100"></progress>
         <hr>
 
     </main>
-
-
 
     <footer> 
         <p> Author: Michelle Wee</p>
