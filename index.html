@@ -1,12 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Index</title>
+<head>
+    <meta charset = "UTF-8">
+    <title> Michelle's Portfolio </title>
+    <link rel="stylesheet" href="style-sheet.css">
+    <style>
 
-        <link rel="stylesheet" href="style-sheet.css">
-    </head>
+        body {
 
-    <body>
-    </body>
+            border: 0.25rem solid rgb(115, 0, 130);
+
+        }
+
+        project-card {
+
+            width: 25vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            padding: 2rem;
+            border: 0.2rem solid rgb(39, 0, 64);
+            border-radius: 2rem;
+            margin-top: 2rem;
+
+            background-color: rgb(235, 196, 255);
+
+        }
+
+        project-card img {
+
+            width: 150px;
+
+        }
+
+    
+    </style>
+</head>
+<body>
+    <noscript>Enable JavaScript for full functionality.</noscript>
+
+    <header>
+        <h1> Michelle Wee </h1>=
+        <nav>
+            <p > Jump down to: </p>
+            <ol>
+                <li><a href="#About-Me"> About Me</a></li>
+                <li><a href="#Projects"> Projects Section</a></li>
+                <li><a href="#Contacts"> Let's Connect! </a></li>
+            </ol>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="About-Me">
+            <h2> About Me: </h2>
+            <h3> Introduction: </h3>
+            <p> Hi, I am currently a fourth year student at <i>UC San Diego</i>, majoring in computer science
+                and minoring in cognitive science. I <em>really</em> enjoy using my knowledge to create and to 
+                test the limits of what I can do. In the future, I hope to make an impact in the world. 
+            </p>
+
+            <h3> My resume: </h3>
+            <a href = "https://docs.google.com/document/d/1yxwJvILbZGjwvqFF6PGSkCUXcnz6qH2YGJsIg52HeIo/preview" target="_blank">View my resume</a> 
+
+            <h3> My skills: </h3>
+            <div>
+                <p> 
+                    <strong> very confident skill</strong> <br>
+                    <strong> very confident skill</strong> <br>
+                    Skill <br>
+                    Skill 
+                </p>
+            </div>
+        </section>
+
+        <br>
+        <label for = "pageReadOne" > Percentage of page read:</label>
+        <progress id = "pageReadOne" value="33" max="100"></progress>
+        <hr>
+
+        <section id="Projects">
+            <h2> Projects Section: </h2>
+            <button> &lt; </button> <button> &gt; </button>
+            <dialog open>
+                <p>Wow, look at all of these projects!!!</p>
+            </dialog>
+            <article>
+                <project-card name = "arcade">
+                    <h3> Arcade: </h3>
+                    <div>
+                        <picture>
+                            <source srcset="./assets/arcade.svg">
+                            <img src = "./assets/arcade.svg" alt="Arcade" width="150">
+                        </picture>
+                        <p> 
+                            <span style="color:rgb(105, 0, 196)">project type :</span> Personal <br>
+                            <span style="color:rgb(105, 0, 196)">association :</span> N/A <br>
+                            <span style="color:rgb(105, 0, 196)"> purpose :</span> will write something here
+                        </p>
+                    </div>
+                    <b> Project Details: </b>
+                    <ul> 
+                        <li> project detail</li>
+                        <li> project detail</li>
+                        <li> project detail</li>
+                    </ul>
+                    <b> Actions: </b>
+                    <nav>
+                        <a href = "https://github.com/MichelleW1234/Arcade" target="_blank"> Visit Github Repo </a>
+                        <a href = "./project-one-media.html" target="_blank"> Go to media section </a>
+                    </nav>
+                </project-card>
+            </article>
+
+            <article>
+                <project-card name = "tritonturnup">
+                    <h3> TritonTurnUp: </h3>
+                    <div>
+                        <picture>
+                            <source srcset="./assets/tritonturnup.svg">
+                            <img src = "./assets/tritonturnup.svg" alt="TritonTurnUp" width="150">
+                        </picture>
+                        <p> 
+                            <span style="color:rgb(105, 0, 196)"> project type :</span> Academic <br>
+                            <span style="color:rgb(105, 0, 196)"> association :</span> UCSD <br>
+                            <span style="color:rgb(105, 0, 196)"> purpose :</span> will write something here
+                        </p>
+                    </div>
+                    <b> Project Details: </b>
+                    <ul> 
+                        <li> project detail</li>
+                        <li> project detail</li>
+                        <li> project detail</li>
+                    </ul>
+                    <b> Actions: </b>
+                    <nav>
+                        <a href = "https://github.com/MichelleW1234/CSE-110-Project" target="_blank"> Visit Github Repo </a>
+                        <a href = "./project-two-media.html" target="_blank"> Go to media section </a>
+                    </nav>
+                </project-card>
+            </article>
+
+            <article>
+                <project-card name = "snowAgent">
+                    <h3> Snow Agent Advertisement: </h3>
+                    <div>
+                        <picture>
+                            <source srcset="./assets/snowagent.svg">
+                            <img src = "./assets/snowagent.svg" alt="SnowAgent" width="150">
+                        </picture>
+                        <p> 
+                            <span style="color:rgb(105, 0, 196)">project type :</span> Internship <br>
+                            <span style="color:rgb(105, 0, 196)">association :</span> Decode AI <br>
+                            <span style="color:rgb(105, 0, 196)">purpose :</span> will write something here
+                        </p>
+                    </div>
+                    <b> Project Details: </b>
+                    <ul> 
+                        <li> project detail</li>
+                        <li> project detail</li>
+                        <li> project detail</li>
+                    </ul>
+                    <b> Actions: </b>
+                    <nav>
+                        <a href = "./project-three-media.html" target="_blank"> Go to media section </a>
+                    </nav>
+                </project-card>
+            </article>
+
+            <article>
+                <project-card name = "wordProcessor">
+                    <h3> Word Processor: </h3>
+                    <div>
+                        <svg width="150" height="150">
+                            <rect rx="20" ry="20" width="150" height="150"></rect>
+                        </svg>
+                        <p> 
+                            <span style="color:rgb(105, 0, 196)">project type :</span> Personal <br>
+                            <span style="color:rgb(105, 0, 196)">association :</span> N/A <br>
+                            <span style="color:rgb(105, 0, 196)">purpose :</span> will write something here
+                        </p>
+                    </div>
+                    <b> Project Details: </b>
+                    <ul> 
+                        <li> project detail</li>
+                        <li> project detail</li>
+                        <li> project detail</li>
+                    </ul>
+                    <b> Actions: </b>
+                    <nav>
+                        <a href = "https://github.com/MichelleW1234/Word-Processor" target="_blank"> Visit Github Repo </a>
+                        <a href = "./project-four-media.html" target="_blank"> Go to media section </a>
+                    </nav>
+                </project-card>
+            </article>
+        </section>
+
+        <br>
+        <label for = "pageReadTwo" > Percentage of page read:</label>
+        <progress id = "pageReadTwo" value="66" max="100"></progress>
+        <hr>
+        
+        <section id="Contacts">
+            <h2> Let's Connect! </h2>
+            <nav>
+                <a href = "https://github.com/MichelleW1234" target="_blank"> 
+                    <img src = "./assets/github.svg" alt="GithubLogo" width="150">
+                </a>
+                <iframe src = "https://github.com/MichelleW1234/" width = "200" height = "400"></iframe>
+                <a  href = "https://www.linkedin.com/in/michelle-wee123/" target="_blank"> 
+                    <img src = "./assets/linkedin.svg" alt="LinkedinLogo" width="150">
+                </a>
+                <iframe src = "https://www.linkedin.com/in/michelle-wee123/" width = "200" height = "400"></iframe>
+            </nav>
+            <h3> Contact Me: </h3>
+            <form action="https://formspree.io/f/mblzqpnw" method = "post">
+                <fieldset>
+                    <legend> Personal Information: </legend>
+                    <label for = "firstName"> First Name: </label>
+                    <input id = "firstName" name = "firstName" minlength="3" required>
+                    <label for = "lastName"> Last Name: </label>
+                    <input id = "lastName" name = "lastName" minlength="3" required>
+                    <label for = "email"> Email Address: </label>
+                    <input id = "email" name = "email" type = "email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required>
+                </fieldset>
+                <label for = "message"> Message: </label>
+                <textarea id = "message" required></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+
+        <br>
+        <label for = "pageReadThree" > Percentage of page read:</label>
+        <progress id = "pageReadThree" value="100" max="100"></progress>
+        <hr>
+
+        <hello-world>
+            <p>Check your console!!</p>
+        </hello-world>
+    </main>
+
+    <footer> 
+        <p> Author: Michelle Wee</p>
+    </footer>
+    <script>
+      class HelloWorld extends HTMLElement {
+        constructor() {
+          super();
+          console.log("Hello world!");
+        }
+      }
+      customElements.define('hello-world', HelloWorld);
+    </script>
+</body>
 </html>
